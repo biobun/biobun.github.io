@@ -1,0 +1,41 @@
+{
+    "experiences" : [
+        {
+            "jobTitle": "Fullstack Developer",
+            "workAt":"Jakarta Smart City",
+            "detail": "Februari 2021 - Present"
+        },
+        {
+            "jobTitle": "Datawarehouse staff",
+            "workAt":"Diskominfo Depok",
+            "detail": "Februari 2019 - Januari 2021"
+        },
+        {
+            "jobTitle": "Frontend Developer",
+            "workAt":"Onmaca Cerdas Bangsa",
+            "detail": "Juli 2018 - Januari 2019"
+        }
+    ], 
+    "works" : [
+        {
+            "name": "Landing Page Pusdatin Kemendikdasmen",
+            "desc": "Deskripsi works",
+            "image": ""
+        },
+        {
+            "name": "Landing Page Jaki",
+            "desc": "Deskripsi works",
+            "image": ""
+        },
+        {
+            "name": "Portal Berita Resmi Pemerintah Kota Depok",
+            "desc": "Deskripsi works",
+            "image": ""
+        },
+        {
+            "name": "Portal Resmi Pemerintah Kota Depok",
+            "desc": "Deskripsi works",
+            "image": ""
+        }
+    ]
+}
