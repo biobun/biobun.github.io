@@ -3,6 +3,18 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { promises as fs } from 'fs';
 
+interface Experience {
+  jobTitle: string,
+  workAt: string,
+  detail: string,
+}
+
+interface Work {
+  name: string,
+  desc: string,
+  image: string,
+}
+
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + '/app/data/data.json', 'utf8');
   const data = JSON.parse(file);
@@ -29,7 +41,7 @@ export default async function Home() {
 
           <div className="mt-10 w-3/4">
             <div className="font-extrabold text-2xl mb-10">Working Experience</div>
-            {data.experiences.map((experience, index) => (
+            {data.experiences.map((experience: Experience, index: number) => (
               <div key={index} className="p-5 mb-5 text-xl border-2 border-gray-200 rounded-xl">
                 <div className="mb-3"><span>{experience.jobTitle}</span> at <span className="font-bold">{experience.workAt}</span></div>
                 <div className="text-gray-400">{experience.detail}</div>
@@ -39,7 +51,7 @@ export default async function Home() {
 
           <div className="mt-10">
             <div className="font-extrabold text-2xl mb-10">Selected Works</div>
-            {data.works.map((work, index) => (
+            {data.works.map((work: Work, index: number) => (
               <div key={index} className="p-5 mb-5 text-xl border-2 border-gray-200 rounded-xl">
                 <div className="mb-3">{work.name}</div>
                 <div className="text-gray-400">{work.desc}</div>
